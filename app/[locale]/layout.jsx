@@ -2,6 +2,7 @@ import "./globals.css";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import { Toaster } from "@/components/ui/toaster";
+import { NotificationProvider } from "@/contexts/notification-context";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -33,8 +34,10 @@ export default async function RootLayout({ children, params: {locale} }) {
             enableSystem
             disableTransitionOnChange
           >
-            {children}
-            <Toaster />
+            <NotificationProvider>
+              {children}
+              <Toaster />
+            </NotificationProvider>
           </ThemeProvider>
         </NextIntlClientProvider>
       </body>

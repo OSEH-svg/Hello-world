@@ -17,6 +17,7 @@ import { WalletConnect } from "@/components/wallet-connect"
 import { MobileNav } from "@/components/mobile-nav"
 import { SocialIcons } from "@/components/social-icons"
 import { mockComments } from "@/components/comment-modal"
+import { NotificationsPanel } from "@/components/notifications-panel"
 
 // Sample data - in a real app, this would come from an API
 const ideas = [
@@ -180,6 +181,7 @@ export default function IdeaDetailPage() {
                         </Link>
                     </nav>
                     <div className="flex items-center gap-2 md:gap-4">
+                        <NotificationsPanel />
                         <WalletConnect />
                         <ThemeToggle />
                     </div>
