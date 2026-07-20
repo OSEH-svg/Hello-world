@@ -12,6 +12,7 @@ import { WalletConnect } from "@/components/wallet-connect"
 import { MobileNav } from "@/components/mobile-nav"
 import { SocialIcons } from "@/components/social-icons"
 import { GradientText } from "@/components/gradient-text"
+import { NotificationsPanel } from "@/components/notifications-panel"
 
 export default function IdeasPage() {
   return (
@@ -40,6 +41,7 @@ export default function IdeasPage() {
             </Link>
           </nav>
           <div className="flex items-center gap-2 md:gap-4">
+            <NotificationsPanel />
             <WalletConnect />
             <ThemeToggle />
           </div>

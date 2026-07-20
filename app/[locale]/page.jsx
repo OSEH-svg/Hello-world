@@ -10,6 +10,7 @@ import { ThemeToggle } from "@/components/theme-toggle";
 import { WalletConnect } from "@/components/wallet-connect";
 import { MobileNav } from "@/components/mobile-nav";
 import { LanguageSwitcher } from "@/components/language-switcher";
+import { NotificationsPanel } from "@/components/notifications-panel";
 
 import { useTranslations } from 'next-intl';
 
@@ -47,6 +48,7 @@ const page = () => {
           </nav>
           <div className="flex items-center gap-2 md:gap-4">
             <LanguageSwitcher />
+            <NotificationsPanel />
             <WalletConnect />
             <ThemeToggle />
           </div>
